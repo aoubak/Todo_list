@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-bg: #f5f6fa;
+    --accent: #44b08c;
+    --text: #232931;
+    --card-bg: #ffffff;
+
+    /* others */
+
+    --bg-color: rgb(28, 47, 87);
+    --secong-bg-color: rgb(46, 80, 150);
+    --transparent: #ffffff2c;
+    --border-color: #ffffff86;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--bg-color);
+}
+
+.container {
+    background: var(--secong-bg-color);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid var(--border-color);
+}
+
+.container .header {
+    margin-bottom: .5rem;
+}
+
+.container .user_input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+
+.container .user_input input {
+    background: var(--transparent);
+    padding: .4rem .5rem;
+    outline: none;
+    border: 1px solid var(--border-color);
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+}
+
+.container .user_input button {
+    padding: .6rem;
+    background: var(--accent);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container .list_display {
+    border-radius: 5px;
+    padding: .8rem;
+    background: var(--transparent);
+    margin-bottom: .5rem;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.container .list_display span i {
+    padding: .2rem;
+    background: rgb(246, 53, 53);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    /* font-size: 10px; */
+    color: white;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.error {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    padding: .3rem;
+    background: rgba(247, 60, 60, 0.566);
+    border-radius: 5px;
+    display: none;
+    border: 1px solid rgba(247, 60, 60, 0.719);
+}
+
+.error.active {
+    display: block;
+}
