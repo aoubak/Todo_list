@@ -59,7 +59,7 @@ body {
     color: white;
 }
 .container .user_input input::placeholder{
-    color: rgba(255, 255, 255, 0.685);
+    color: rgb(255, 255, 255);
 }
 
 .container .user_input button {
