@@ -58,9 +58,7 @@ body {
     border-radius: 5px;
     color: white;
 }
-.container .user_input input::placeholder{
-    color: rgb(255, 255, 255);
-}
+
 
 .container .user_input button {
     padding: .6rem;
@@ -119,4 +117,30 @@ body {
 
 .error.active {
     display: block;
+}
+
+/* Default placeholder */
+.container .user_input input::placeholder {
+  color: #ffffff; /* Light gray or any color you prefer */
+  opacity: 1;  /* Full opacity */
+}
+
+/* WebKit browsers (Chrome, Safari, newer Edge) */
+.container .user_input input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+/* Firefox */
+.container .user_input input::-moz-placeholder {
+  color: #ffffff;
+}
+
+/* Internet Explorer 10-11 */
+.container .user_input input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+/* Old Firefox */
+.container .user_input input:-moz-placeholder {
+  color: #ffffff;
 }
