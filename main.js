@@ -31,7 +31,7 @@ addbtn.addEventListener('click', () => {
 
         setTimeout(() => {
             error.classList.remove("active");
-        }, 5000);
+        }, 3000);
 
     } else if (input.value !== "") {
         error.classList.remove("active");
