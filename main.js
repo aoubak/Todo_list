@@ -4,12 +4,34 @@ const error = document.getElementById("error_display");
 const listContainer = document.getElementById('list_container');
 
 
+const typing_container = document.querySelector(".typing_container");
+let typing = document.getElementById("typing");
+
+
+input.addEventListener('keyup', () => {
+    typing.textContent = input.value;
+    typing.style.padding = "5px";
+    typing.style.background = "#ffffff2c";
+    typing.style.display = "inline-block";
+    typing.style.whiteSpace = "nowrap";
+    typing.style.borderRadius = "5px";
+})
 
 
 
 addbtn.addEventListener('click', () => {
+    typing.textContent = "";
+    typing.style.padding = "";
+    typing.style.background = "#ffffff2c";
+    typing.style.display = "inline-block";
+    typing.style.whiteSpace = "nowrap";
+    typing.style.borderRadius = "5px";
     if (input.value == "") {
         error.classList.add("active");
+
+        setTimeout(() => {
+            error.classList.remove("active");
+        }, 5000);
 
     } else if (input.value !== "") {
         error.classList.remove("active");
@@ -31,8 +53,10 @@ addbtn.addEventListener('click', () => {
 
         div.addEventListener('click', () => {
             if (p.style.textDecoration == "line-through") {
-                p.style.textDecoration = "wavy";
-                p.style.opacity = "100%"
+                setTimeout(() => {
+                    p.style.textDecoration = "wavy";
+                    p.style.opacity = "100%";
+                }, 5000);
             } else {
                 p.style.textDecoration = "line-through"
                 p.style.opacity = "30%"
@@ -48,8 +72,4 @@ addbtn.addEventListener('click', () => {
 
 
 });
-
-
-
-
 

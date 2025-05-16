@@ -23,11 +23,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    /* height: 80vh; */
+
     background: var(--bg-color);
 }
 
 .container {
+    margin-top: 3rem;
     background: var(--secong-bg-color);
     padding: 1rem;
     border-radius: 10px;
@@ -43,7 +45,7 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .container .user_input input {
@@ -88,6 +90,11 @@ body {
     color: white;
     border: 1px solid var(--border-color);
     cursor: pointer;
+}
+
+#typing {
+    color: #ffffff;
+   margin-bottom: .5rem;
 }
 
 .error {
