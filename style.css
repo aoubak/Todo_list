@@ -51,12 +51,15 @@ body {
 
 .container .user_input input {
     background: var(--transparent);
-    padding: .4rem .5rem;
+    padding: .5rem .5rem;
     outline: none;
     border: 1px solid var(--border-color);
-    font-size: 18px;
+    font-size: 1rem;
     border-radius: 5px;
     color: white;
+}
+.container .user_input input::placeholder{
+    color: rgba(255, 255, 255, 0.685);
 }
 
 .container .user_input button {

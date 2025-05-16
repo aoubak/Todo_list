@@ -9,7 +9,7 @@ let typing = document.getElementById("typing");
 
 
 input.addEventListener('keyup', () => {
-    if (input.value == "") {
+    if (input.value.trim() == "") {
          typing.style.display = "none";
     } else {
         typing.textContent = input.value;
